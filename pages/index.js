@@ -52,7 +52,7 @@ getQuotes();
       {/* socials */}
       <div className="flex space-x-4">
 
-      <div className="md:text-4xl font-bold flex text-black space-x-2"><p className="pt-3 md:pt-0">Share on</p> <svg xmlns="http://www.w3.org/2000/svg" className="md:h-13 md:w-8 h-12 w-5" viewBox="0 0 20 20" fill="currentColor">
+      <div className="md:text-4xl font-bold flex space-x-2 text-red-700"><p className="pt-3 md:pt-0">Share on</p> <svg xmlns="http://www.w3.org/2000/svg" className="md:h-13 md:w-8 h-12 w-5" viewBox="0 0 20 20" fill="currentColor">
   <path d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z" />
 </svg> </div>
 
