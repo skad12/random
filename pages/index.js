@@ -1,13 +1,14 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 
 
 function Random() {
 
 const [ quote, setQuote ] = useState("");
+const textRef = useRef();
+let colors = ['#845EC2', '#FF6F91', '#F9F871', '#D65DB1', '#FF6F91', '#4D8076']
 
 
 const getQuotes = () => {
-
 fetch("https://type.fit/api/quotes")
 .then((res) => res.json())
 .then((data) => {
@@ -18,27 +19,29 @@ fetch("https://type.fit/api/quotes")
 };
 
 useEffect(() => {
-  
 getQuotes();
-
 }, []);
+
+useEffect(() => {
+textRef.current.style.colors = colors[Math.floor(Math.random() * colors.length)];
+}, [quote])
 
 
   return (
     
-<div className=" antialiased bg-blue-500 min-h-screen bg-cover" style={{ backgroundImage: ` url('https://picsum.photos/200/300?grayscale')` }}>
+<div className=" antialiased min-h-screen bg-cover" style={{ backgroundImage: ` url('https://source.unsplash.com/user/c_v_r')` }}>
 
 <div className="flex justify-around py-16" >
 <div className="text-3xl md:text-5xl  text-red-800 sm:text-xl ">Random Quote Generator</div>
 </div>
 
-<div className="flex justify-center py-16">
-<div className="card w-60 md:w-96 bg-primary text-primary-content italic ">
-  <div className="card-body">
-    <p>&quot; {quote.text} &quot;</p>
+<div className="flex justify-center py-16 " >
+<div  className="card w-60 md:w-96 italic bg-cover text-white" style={{ backgroundImage: ` url('https://images.unsplash.com/photo-1622467827417-bbe2237067a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80')` }}>
+  <div className="card-body"> 
+    <p ref={textRef}>&quot; {quote.text} &quot;</p>
       <p className="flex justify-end capitalize " > - {quote.author}</p>
     <div className="card-actions justify-end">
-      <button onClick={ getQuotes }  className="btn italic hover:shadow-xl hover:bg-white hover:text-black mt-6 ">Next</button>
+      <button onClick={ getQuotes }  className="btn italic hover:shadow-xl bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 mt-6 ">Next</button>
     </div>
   </div>
 </div>
