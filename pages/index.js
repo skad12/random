@@ -59,12 +59,12 @@ textRef.current.style.colors = colors[Math.floor(Math.random() * colors.length)]
   <path d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z" />
 </svg> </div>
 
-     <div><a href={`https://facebook.com/home/post/?text=${quote.text}`} target="_blank" rel="noopener noreferrer">
+     {/* <div><a href={`https://facebook.com/home/post/?text=${quote.text}`} target="_blank" rel="noopener noreferrer">
      <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" className="md:h-13 md:w-14 h-12 w-7" ><linearGradient id="Ld6sqrtcxMyckEl6xeDdMa" x1="9.993" x2="40.615" y1="9.993" y2="40.615" gradientUnits="userSpaceOnUse">
       <stop offset="0" stopColor="#2aa4f4"/><stop offset="1" stopColor="#007ad9"/></linearGradient><path fill="url(#Ld6sqrtcxMyckEl6xeDdMa)" d="M24,4C12.954,4,4,12.954,4,24s8.954,20,20,20s20-8.954,20-20S35.046,4,24,4z"/>
      <path fill="#fff" d="M26.707,29.301h5.176l0.813-5.258h-5.989v-2.874c0-2.184,0.714-4.121,2.757-4.121h3.283V12.46 c-0.577-0.078-1.797-0.248-4.102-0.248c-4.814,0-7.636,2.542-7.636,8.334v3.498H16.06v5.258h4.948v14.452 C21.988,43.9,22.981,44,24,44c0.921,0,1.82-0.084,2.707-0.204V29.301z"/>
      </svg>
-     </a></div>
+     </a></div> */}
 
      <div><a href={`https://wa.me/?text=${quote.text}`} target="_blank" rel="noopener noreferrer">  
 <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" className="md:h-13 md:w-14 h-12 w-7"  fillRule="evenodd" clipRule="evenodd"><path fill="#fff" d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z"/>
@@ -81,10 +81,10 @@ textRef.current.style.colors = colors[Math.floor(Math.random() * colors.length)]
      </svg>
      </a></div>
 
-     <div><a href={`https://www.linkedin.com/feed/createpost/text=${quote.text}`} target="_blank" rel= "nooperner noreferrer">
+     {/* <div><a href={`https://www.linkedin.com/feed/createpost/text=${quote.text}`} target="_blank" rel= "nooperner noreferrer">
 <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" className="md:h-13 md:w-14 h-12 w-7" ><path fill="#0288D1" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z"/>
 <path fill="#FFF" d="M12 19H17V36H12zM14.485 17h-.028C12.965 17 12 15.888 12 14.499 12 13.08 12.995 12 14.514 12c1.521 0 2.458 1.08 2.486 2.499C17 15.887 16.035 17 14.485 17zM36 36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698-1.501 0-2.313 1.012-2.707 1.99C24.957 25.543 25 26.511 25 27v9h-5V19h5v2.616C25.721 20.5 26.85 19 29.738 19c3.578 0 6.261 2.25 6.261 7.274L36 36 36 36z"/>
-</svg></a></div>
+</svg></a></div> */}
 </div>
 
       <div className="text-red-700 text-xs pt-2 font-bold md:text-xl">Powered by Vercel<br/> Built by SKAD</div>
